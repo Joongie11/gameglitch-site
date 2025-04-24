@@ -35,3 +35,16 @@ document.addEventListener("DOMContentLoaded", () => {
     heroTitle.classList.remove("glitch-start");
   }, 3000);
 });
+
+const notificationsIcon = document.querySelector(".notifications-icon");
+const dropdown = document.querySelector(".notifications-dropdown");
+
+notificationsIcon.addEventListener("click", () => {
+  dropdown.classList.toggle("show");
+});
+
+document.addEventListener("click", (e) => {
+  if (!notificationsIcon.contains(e.target) && !dropdown.contains(e.target)) {
+    dropdown.classList.remove("show");
+  }
+});
