@@ -48,3 +48,16 @@ document.addEventListener("click", (e) => {
     dropdown.classList.remove("show");
   }
 });
+
+const accountIcon = document.querySelector(".account-icon");
+const accountDropdown = document.querySelector(".account-dropdown");
+
+accountIcon.addEventListener("click", () => {
+  accountDropdown.classList.toggle("show");
+});
+
+document.addEventListener("click", (e) => {
+  if (!accountIcon.contains(e.target) && !accountDropdown.contains(e.target)) {
+    accountDropdown.classList.remove("show");
+  }
+});

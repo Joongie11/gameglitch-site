@@ -185,6 +185,67 @@ h3,
     border-bottom: none;
 }
 
+/* ACCOUNT SECTION */
+.account {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+
+.account-icon {
+    cursor: pointer;
+    font-size: 1.8rem;
+    transition: color 0.3s ease;
+}
+
+.account-icon:hover {
+    color: #00ffff;
+}
+
+.account-dropdown {
+    position: absolute;
+    top: 2.5rem;
+    right: 0;
+    background-color: #22224d;
+    color: #d9d9d9;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    z-index: 1001;
+    opacity: 0;
+    transform: translateY(-10px) scale(0.95);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    pointer-events: none;
+}
+
+.account-dropdown.show {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    pointer-events: auto;
+}
+
+.account-dropdown button {
+    background: transparent;
+    color: #00ffff;
+    border: 2px solid #00ffff;
+    border-radius: 30px;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem 0;
+    font-family: 'Orbitron', sans-serif;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.account-dropdown button:hover {
+    background: #00ffff;
+    color: #01002d;
+    box-shadow: 0 0 10px #00ffff;
+}
+
+
 /* HERO SECTION */
 .hero {
     height: calc(100vh - 60px);
