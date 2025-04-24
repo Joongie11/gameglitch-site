@@ -1,7 +1,15 @@
 const menuIcon = document.querySelector(".menu-icon");
 const sidebar = document.querySelector(".sidebar");
+const sidebarLinks = document.querySelectorAll(".sidebar ul li a");
 let isSidebarOpen = false;
 let closeTimeout;
+
+sidebarLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    sidebar.classList.remove("show");
+    overlay.classList.remove("show");
+  });
+});
 
 menuIcon.addEventListener("mouseenter", () => {
   clearTimeout(closeTimeout);
@@ -17,14 +25,14 @@ menuIcon.addEventListener("mouseleave", () => {
   closeTimeout = setTimeout(() => {
     sidebar.classList.remove("show");
     isSidebarOpen = false;
-  }, 300);
+  }, 200);
 });
 
 sidebar.addEventListener("mouseleave", () => {
   closeTimeout = setTimeout(() => {
     sidebar.classList.remove("show");
     isSidebarOpen = false;
-  }, 300);
+  }, 200);
 });
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -33,7 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   setTimeout(() => {
     heroTitle.classList.remove("glitch-start");
-  }, 3000);
+  }, 2000);
 });
 
 const notificationsIcon = document.querySelector(".notifications-icon");

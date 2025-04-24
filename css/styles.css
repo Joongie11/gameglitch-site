@@ -146,6 +146,7 @@ h3,
     padding: 2px 6px;
     font-size: 0.7rem;
     text-shadow: 0 0 8px #ff00ff;
+    animation: badgePulse 1.5s infinite;
 }
 
 .notifications-dropdown {
@@ -780,6 +781,118 @@ h3,
     }
 }
 
-.badge {
-    animation: badgePulse 1.5s infinite;
+/* MOBILE STYLES */
+@media (max-width: 768px) {
+
+    /* HEADER */
+    .topbar {
+        height: 60px;
+        padding: 0 1rem;
+    }
+
+
+    .topbar .right {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .topbar .center {
+        left: 50%;
+        transform: translateX(-50%);
+        position: absolute;
+    }
+
+    .logo img {
+        height: 80px;
+    }
+
+    .menu-icon,
+    .topbar .material-icons {
+        font-size: 1.5rem;
+    }
+
+    /* SIDEBAR */
+    .sidebar {
+        width: 160px;
+        left: -160px;
+        transition: left 0.2s ease;
+    }
+
+    .sidebar.show {
+        left: 0;
+    }
+
+    .sidebar ul li {
+        margin: 2rem 0;
+    }
+
+    .sidebar ul li a {
+        font-size: 1rem;
+    }
+
+    .menu-icon {
+        font-size: 2rem;
+    }
+
+
+    /* HERO */
+    .hero {
+        padding: 6rem 2rem;
+    }
+
+    .hero .header h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero .header p {
+        font-size: 1rem;
+    }
+
+    /* NEWS GRID */
+    .news-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .news-content h3,
+    .tournament-card h3 {
+        font-size: 1.1rem;
+    }
+
+    .news-content p,
+    .tournament-card p {
+        font-size: 0.95rem;
+    }
+
+    /* FORUMS GRID */
+    .forums-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* TOURNAMENTS GRID */
+    .tournament-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .tournament-card {
+        text-align: center;
+        padding-top: 3rem;
+    }
+
+    .players {
+        position: static;
+        text-align: center;
+        margin-bottom: 0.5rem;
+    }
+
+    /* FOOTER */
+    .footer-logo {
+        width: 100px;
+    }
+
+    .footer .socials a {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
 }
