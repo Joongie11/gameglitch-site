@@ -14,7 +14,12 @@
 
 ## 🚀 Live Demo
 
-[GameGlitch site demo](https://joongie11.github.io/gameglitch-site/
+<p align="center">
+  <a href="https://joongie11.github.io/gameglitch-site/" target="_blank">
+    <img src="https://img.shields.io/badge/VIEW%20SITE-GameGlitch-blueviolet?style=for-the-badge&logo=github" alt="GameGlitch Demo" />
+  </a>
+</p>
+
 
 ## 🛠️ Technologies Used
 
