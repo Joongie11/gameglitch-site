@@ -19,7 +19,7 @@ Coming soon on GitHub Pages!
 ## 🛠️ Technologies Used
 
 - **HTML5**  
-- **CSS3** (with CSS Variables for easy theming)  
+- **CSS3**  
 - **JavaScript** (Vanilla)  
 
 ## 📁 Project Structure
