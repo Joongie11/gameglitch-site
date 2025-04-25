@@ -14,7 +14,7 @@
 
 ## 🚀 Live Demo
 
-Coming soon on GitHub Pages!
+[GameGlitch site demo](https://joongie11.github.io/gameglitch-site/
 
 ## 🛠️ Technologies Used
 
