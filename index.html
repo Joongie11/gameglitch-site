@@ -10,7 +10,6 @@
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
     <link rel="stylesheet" href="css/styles.css" />
 </head>
 
@@ -20,7 +19,7 @@
             <span class="material-icons menu-icon">menu</span>
         </div>
         <div class="center logo">
-            <img src="assets/logo/logo.png" alt="GameGlitch Logo">
+            <img src="assets/logo/logo.png" alt="GameGlitch Logo" loading="lazy">
         </div>
         <div class="right">
             <div class="notifications">
@@ -40,7 +39,7 @@
                     <button class="register-btn">Register</button>
                 </div>
             </div>
-            <span class="material-icons">dark_mode</span>
+            <span class="material-icons theme-toggle">dark_mode</span>
         </div>
     </header>
 
@@ -55,11 +54,10 @@
         </ul>
     </nav>
 
-    <section class="hero">
+    <section class="hero" id="home">
         <div class="grid-layer"></div>
         <div class="grid-layer reverse"></div>
         <div class="vignette"></div>
-
         <div class="header">
             <h1>Welcome to GameGlitch!</h1>
             <p>One place. All gamers. News, tournaments, and a community that never sleeps.</p>
@@ -73,7 +71,7 @@
             <h2>Latest News</h2>
             <div class="news-grid">
                 <article class="news-card">
-                    <img src="assets/images/news1.jpg" alt="News Image 1">
+                    <img src="assets/images/news1.webp" alt="News Image 1" width="300" height="180">
                     <div class="news-content">
                         <h3>Epic Tournament Announced!</h3>
                         <p>Get ready for the biggest showdown of the year with massive prizes and glory!</p>
@@ -81,7 +79,7 @@
                     </div>
                 </article>
                 <article class="news-card">
-                    <img src="assets/images/news2.jpg" alt="News Image 2">
+                    <img src="assets/images/news2.webp" alt="News Image 2" width="300" height="180">
                     <div class="news-content">
                         <h3>Patch 1.2 Released</h3>
                         <p>Major updates, bug fixes, and new features in your favorite RPG game.</p>
@@ -89,10 +87,35 @@
                     </div>
                 </article>
                 <article class="news-card">
-                    <img src="assets/images/news3.jpg" alt="News Image 3">
+                    <img src="assets/images/news3.webp" alt="News Image 3" width="300" height="180">
                     <div class="news-content">
                         <h3>New Game Spotlight</h3>
                         <p>Discover the indie game taking the community by storm with its unique mechanics.</p>
+                        <span class="date">April 15, 2025</span>
+                    </div>
+                </article>
+                <article class="news-card">
+                    <img src="assets/images/news4.webp" alt="News Image 4" width="300" height="180">
+                    <div class="news-content">
+                        <h3>Global Esports Championship Incoming!</h3>
+                        <p>Join teams from around the world in the ultimate battle for prestige and grand rewards!</p>
+                        <span class="date">April 23, 2025</span>
+                    </div>
+                </article>
+                <article class="news-card">
+                    <img src="assets/images/news5.webp" alt="News Image 5" width="300" height="180">
+                    <div class="news-content">
+                        <h3>Version 1.3 Update Dropped</h3>
+                        <p>New maps, enhanced gameplay mechanics, and exclusive seasonal events now live!</p>
+                        <span class="date">April 20, 2025</span>
+                    </div>
+                </article>
+                <article class="news-card">
+                    <img src="assets/images/news6.webp" alt="News Image 6" width="300" height="180">
+                    <div class="news-content">
+                        <h3>Indie Gem: Pixel Odyssey</h3>
+                        <p>Explore the retro-inspired world of Pixel Odyssey, blending classic visuals with modern
+                            gameplay.</p>
                         <span class="date">April 15, 2025</span>
                     </div>
                 </article>
@@ -172,7 +195,6 @@
             <p class="author">Designed & developed by Sofi</p>
         </div>
     </footer>
-
 
     <script src="js/script.js"></script>
 </body>

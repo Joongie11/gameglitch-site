@@ -69,3 +69,25 @@ document.addEventListener("click", (e) => {
     accountDropdown.classList.remove("show");
   }
 });
+
+const newsGrid = document.querySelector(".news-grid");
+let scrollAmount = 0;
+let scrollSpeed = 0.8;
+
+function autoScroll() {
+  scrollAmount += scrollSpeed;
+  if (scrollAmount >= newsGrid.scrollWidth - newsGrid.clientWidth) {
+    scrollAmount = 0;
+  }
+  newsGrid.scrollLeft = scrollAmount;
+}
+
+let scrollInterval = setInterval(autoScroll, 20);
+
+const newsCards = document.querySelectorAll(".news-card");
+newsCards.forEach((card) => {
+  card.addEventListener("mouseenter", () => clearInterval(scrollInterval));
+  card.addEventListener("mouseleave", () => {
+    scrollInterval = setInterval(autoScroll, 20);
+  });
+});
