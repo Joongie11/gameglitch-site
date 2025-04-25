@@ -22,22 +22,6 @@ Coming soon on GitHub Pages!
 - **CSS3**  
 - **JavaScript** (Vanilla)  
 
-## ⚙️ Getting Started
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/Joongie11/gameglitch-site.git
-
-
-2. Navigate into the project folder:
-   ```bash
-   cd gameglitch-site
-
-
-3. Open index.html directly in your browser.
-   
-No additional setup or dependencies are required!
-
 ## 📸 Preview
 ![GameGlitch site](assets/preview.png)
 
