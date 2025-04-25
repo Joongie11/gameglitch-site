@@ -22,11 +22,6 @@ Coming soon on GitHub Pages!
 - **CSS3**  
 - **JavaScript** (Vanilla)  
 
-## 📁 Project Structure
-
-gameglitch-site/ ├── assets/ │ ├── images/ # News and site images │ └── logo/ # Site logo ├── css/ │ └── styles.css # Main stylesheet ├── js/ │ └── script.js # JavaScript functionality ├── index.html # Main website page └── README.md # Project documentation
-
-
 ## ⚙️ Getting Started
 
 1. Clone the repository:
