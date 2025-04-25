@@ -39,3 +39,6 @@ Coming soon on GitHub Pages!
 No additional setup or dependencies are required!
 
 ## 📸 Preview
+<img width="600" alt="preview" src="https://github.com/user-attachments/assets/preview" />
+
+
